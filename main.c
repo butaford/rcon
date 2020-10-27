@@ -460,6 +460,7 @@ int main(int ac, char **av)
     }
 #endif
 
+    srandom(time(NULL));
     response = g_byte_array_new();
     r = src_rcon_new();
 

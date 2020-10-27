@@ -95,7 +95,7 @@ static void src_rcon_message_update_size(src_rcon_message_t *m)
 
 static void src_rcon_message_random_id(src_rcon_message_t *m)
 {
-    m->id = (int32_t)arc4random_uniform(INT32_MAX-1);
+    m->id = (int32_t)(random() % (INT32_MAX-1));
 }
 
 static rcon_error_t
